@@ -3,30 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFÓLIO</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Biografia - Erick Santos (Aspas)</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-ul li a {
+            text-decoration: none;
+            color: #427bb1; /* Cor do texto dos links */
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            gap: 50px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50px;
+            padding: 30px;
+        }
+        ul.custom-ul {
+            margin-bottom: 0;
+            padding-left: 0; /* Remove o preenchimento padrão à esquerda */
+            list-style-type: none; /* Remove os marcadores padrão */
+        }
+        ul {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 0%;
+        }
+        li:hover {
+            margin-top: -10px;
+            margin-bottom: -10px;
+            margin-left: -12px;
+            margin-right: -12px;
+            text-decoration: none;
+            background-color: rgb(116, 59, 163);
+            border-radius: 80px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        li {
+            text-decoration: none;
+            transition: all 0.5s ease;
+        }
+        body {
+            background: linear-gradient(to right, #1f4f92, #37b5d1); /* Gradiente em tons de azul */
+            color: #ffffff; /* Cor do texto */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para destacar o texto */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .card {
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-out;
+            width: 250px; /* Tamanho fixo para os cartões */
+            height: 250px; /* Tamanho fixo para os cartões */
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid white;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .biografia {
+            max-width: 400px; /* Largura máxima para o texto da biografia */
+            margin-top: 60px;
+            margin-left: 20px; /* Espaçamento à esquerda */
+        }
+        .biografia h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
-
-<header>
+    <header>
         <nav>
             <ul class="custom-ul">
-                <li><a href="index.html">HOME</a> </li><!-- Link para a página inicial -->
-
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="sobre-mim.html">SOBRE MIM</a></li>
-
-                <!-- Adicione mais itens de menu conforme necessário -->
-                <li><a href="projetos.html">PROJETOS</a></li> <!-- Link para a página de projetos -->
-
-                <li><a href="contatos.html">CONTATOS</a> <!-- Link para a página de contatos --></li>
+                <li><a href="projetos.html">PROJETOS</a></li>
+                <li><a href="contatos.html">CONTATOS</a></li>
             </ul>
         </nav>
-</header>
+    </header>
 
-<!-- Aqui você colocaria o conteúdo principal da sua página -->
-<img src="imagens/aspas-leviatan-oficial.webp" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="biografia">
+                    <h3>Erick Santos, conhecido como Aspas, é um jogador profissional brasileiro de VALORANT esports. Nasceu em 15 de Junho de 2003 e atualmente representa o Brasil na organização colombiana Leviatan. Aspas é reconhecido por suas habilidades excepcionais e conquistas em campeonatos internacionais, incluindo o título no VCT Champions Tour Istambul.</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="images-container">
+                    <div class="card">
+                        <img class="card-img-top aspinhas" src="imagens/leviatan.jpg" alt="Leviatan">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top aspinhas" src="imagens/aspinhas.webp" alt="Aspinhas">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top aspinhas" src="imagens/loud.webp" alt="Loud">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top aspinhas" src="imagens/aspas-masters-islandia-final-optic.jpg" alt="Aspas Masters">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top aspinhas" src="imagens/asposas.webp" alt="Aspas Masters">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top aspinhas" src="imagens/aspas-leviatan-oficial.webp" alt="Aspas Leviatan">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
